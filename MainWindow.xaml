@@ -13,15 +13,16 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <WrapPanel Grid.Row="1">
-            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12 12 0 0" Width="25" Height="25" Click="MygtukasAtimtis" Content="-"/>
-            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12 12 0 0" Width="25" Height="25" Click="MygtukasSudetis" Content="+"/>
-            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12 12 0 0" Width="25" Height="25" Click="MygtukasDalyba" Content="/"/>
-            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12 12 0 0" Width="25" Height="25" Click="MygtukasDaugyba" Content="*"/>
+            <Button x:Name="MygtukasAtimtis" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12 12 0 0" Width="25" Height="25" Click="MygtukasAtimtisClick" Content="-"/>
+            <Button x:Name="MygtukasSudetis" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12 12 0 0" Width="25" Height="25" Click="MygtukasSudetisClick" Content="+"/>
+            <Button x:Name="MygtukasDalyba" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12 12 0 0" Width="25" Height="25" Click="MygtukasDalybaClick" Content="/"/>
+            <Button x:Name="MygtukasDaugyba" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12 12 0 0" Width="25" Height="25" Click="MygtukasDaugybaClick" Content="*"/>
+            <Button x:Name="MygtukasIšvalyti" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12 12 0 0" Width="25" Height="25" Click="MygtukasIšvalytiClick" Content="C"/>
         </WrapPanel>
         <WrapPanel Grid.Row="0">
             <TextBox x:Name="pirmasSkaicius" Margin="12 12 0 0" Width ="150" Text=""></TextBox>
             <TextBox x:Name="antrasSkaicius" Margin="30 12 0 0" Width ="150" Text=""></TextBox>
-            <TextBlock x:Name ="rezultatas" FontWeight="Bold"  Margin="30 12 0 0" Width="100" Height="20" Canvas.Left="60" InkCanvas.Top="40" >rezultatas</TextBlock >
+            <TextBlock x:Name="rezultatas" FontWeight="Bold"  Margin="30 12 0 0" Width="100" Height="20" Canvas.Left="60" InkCanvas.Top="40" >rezultatas</TextBlock >
         </WrapPanel>
     </Grid>
 </Window>

@@ -27,7 +27,7 @@ namespace _2021._02._01_wpf_app
         }
 
 
-        private void MygtukasSudetis(object sender, RoutedEventArgs e)
+        private void MygtukasSudetisClick(object sender, RoutedEventArgs e)
         {
             var pirmas = int.TryParse(pirmasSkaicius.Text, out int pirmasSk);
             var antras = int.TryParse(antrasSkaicius.Text, out int antrasSk);
@@ -43,7 +43,7 @@ namespace _2021._02._01_wpf_app
 
         }
 
-        private void MygtukasAtimtis(object sender, RoutedEventArgs e)
+        private void MygtukasAtimtisClick(object sender, RoutedEventArgs e)
         {
             var pirmas = int.TryParse(pirmasSkaicius.Text, out int pirmasSk);
             var antras = int.TryParse(antrasSkaicius.Text, out int antrasSk);
@@ -58,7 +58,7 @@ namespace _2021._02._01_wpf_app
             }
 
         }
-        private void MygtukasDalyba(object sender, RoutedEventArgs e)
+        private void MygtukasDalybaClick(object sender, RoutedEventArgs e)
         {
             var pirmas = double.TryParse(pirmasSkaicius.Text, out double pirmasSk);
             var antras = double.TryParse(antrasSkaicius.Text, out double antrasSk);
@@ -73,7 +73,7 @@ namespace _2021._02._01_wpf_app
             }
 
         }
-        private void MygtukasDaugyba(object sender, RoutedEventArgs e)
+        private void MygtukasDaugybaClick(object sender, RoutedEventArgs e)
         {
             var pirmas = double.TryParse(pirmasSkaicius.Text, out double pirmasSk);
             var antras = double.TryParse(antrasSkaicius.Text, out double antrasSk);
@@ -88,5 +88,15 @@ namespace _2021._02._01_wpf_app
             }
 
         }
+
+        private void MygtukasIšvalytiClick(object sender, RoutedEventArgs e)
+        {
+            pirmasSkaicius.Text = "";
+            antrasSkaicius.Text = "";
+            rezultatas.Text = "";
+        }
+
+
+      
     }
 }
