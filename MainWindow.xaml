@@ -12,12 +12,22 @@
             <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
+        <DataGrid x:Name="HistoryDataGrid" IsReadOnly="True" Grid.Row="2" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Pirmas Skaičius" Binding="{Binding pirmasSkaicius}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Veiksmas" Binding="{Binding operator}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Antras Skaičius" Binding="{Binding antrasSkaicius}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Rezultatas" Binding="{Binding rezultatas}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
         <WrapPanel Grid.Row="1">
             <Button x:Name="MygtukasAtimtis" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12 12 0 0" Width="25" Height="25" Click="MygtukasAtimtisClick" Content="-"/>
             <Button x:Name="MygtukasSudetis" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12 12 0 0" Width="25" Height="25" Click="MygtukasSudetisClick" Content="+"/>
             <Button x:Name="MygtukasDalyba" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12 12 0 0" Width="25" Height="25" Click="MygtukasDalybaClick" Content="/"/>
             <Button x:Name="MygtukasDaugyba" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12 12 0 0" Width="25" Height="25" Click="MygtukasDaugybaClick" Content="*"/>
             <Button x:Name="MygtukasIšvalyti" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12 12 0 0" Width="25" Height="25" Click="MygtukasIšvalytiClick" Content="C"/>
+            <Button x:Name="MygtukasIšvalytiIstoriją" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300 12 0 0" Width="120" Height="25" Click="MygtukasIšvalytiClick" Content="Išvalyti istoriją"/>
+
         </WrapPanel>
         <WrapPanel Grid.Row="0">
             <TextBox x:Name="pirmasSkaicius" Margin="12 12 0 0" Width ="150" Text=""></TextBox>
